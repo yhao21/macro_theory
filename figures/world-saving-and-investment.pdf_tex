@@ -1,0 +1,73 @@
+%% Creator: Inkscape 1.1 (1:1.1+202106031931+af4d65493e), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'world-saving-and-investment.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{680.31496063bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.5)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{world-saving-and-investment.pdf}}%
+    \put(0.34201117,0.46239357){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}world\end{tabular}}}}%
+    \put(0.80622012,0.4614603){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Our country\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{world-saving-and-investment.pdf}}%
+    \put(0.02729828,0.1583046){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ r_{1}^{*} $\\\end{tabular}}}}%
+    \put(0.02782859,0.23684966){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ r_{2}^{*} $\\\end{tabular}}}}%
+    \put(0.30416196,0.42651335){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ S_1 $\\\end{tabular}}}}%
+    \put(0.18003993,0.42579066){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ S_2 $\\\end{tabular}}}}%
+    \put(0.73210621,0.42740993){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S\end{tabular}}}}%
+    \put(0.82306074,0.12912445){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ I(r)_{\text{ SOE }} $\\\end{tabular}}}}%
+    \put(0.36481177,0.13982442){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ I(r)_{\text{ world }} $\\\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{world-saving-and-investment.pdf}}%
+    \put(0.71690973,0.07782822){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ I_0 $\\\end{tabular}}}}%
+    \put(0.59775874,0.07782822){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ I_1 $\\\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{world-saving-and-investment.pdf}}%
+    \put(0.63157412,0.29224294){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ NX > 0 $\\\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

@@ -123,6 +123,10 @@ hamburger. Hence, total added value = 1+2 = 3.
 Not all goods and services are sold in the mkt. Hence not all products have prices.
 For these goods, we need to estimate the imputed value.
 
+
+{\textbf {Note:}}\\
+The difference between nonmarket goods and goods and services traded in the undergroundeconomy is that no money is involved in nonmarket goods.
+
 {\textbf {Case1: Housing}}\\
 Renter pay rents to house owner. There's a expenditure for renter and a income for 
 house owner. So this is counted as part of GDP. However, for those who live in their
@@ -1521,6 +1525,154 @@ S - I &= NX\\
 
 Savings, $ S $, measures how much money domestic residents lending out abroad.
 Investment, $ I $, measures how much money foreign residents lending to us
+
+
+
+
+\subsection{Saving and investment in SOE}
+{\textbf {Now, we do NOT assume the real interest rate equilibrates savings and 
+investment.}} We allow the economy to run a deficit.
+
+{\textbf {Assumptions:}}\\
+1. perfect capital mobility (HHs have full access to wold financial mkt)\\
+2. a given world real interest rate (exogenous)
+\begin{equation*}
+r = r^{*}, \text{ $ r $: local interest rate, $ r^{*} $: world interest rate }
+\end{equation*}
+
+If we consider the world is a big economy, the world economy is  closed economy,
+world savings = world investment determines the world interest rate.
+
+
+
+
+3. Output is fixed by factors
+\begin{equation*}
+Y =  \overline{Y} = F( \overline{K},  \overline{L})
+\end{equation*}
+
+4. Consumption is positively related to disposable income, $ Y - T $
+\begin{align*}
+C &= C(Y - T)\\
+\frac{\partial C }{\partial (Y - T) } &> 0
+\end{align*}
+
+5. Investment is negatively related to the real interest rate, $ r $
+\begin{align*}
+I &= I(r)\\
+\frac{\partial I }{\partial r } &< 0 
+\end{align*}
+
+
+{\textbf {NX formula:}}
+\begin{align*}
+NX &= (Y - C - G) - I\\
+ &= ( \overline{Y} - C( \overline{Y} - T) - G) - I(r^{*})\\
+ &=  \overline{S} - I(r^{*})
+\end{align*}
+
+It says saving depends on fiscal policy (G, and T). Investment depends on the
+world interest rate.
+
+
+The real interest rate for a closed economy is $ r $. Now, in the world mkt, 
+the real interest rate is decided by the world interest rate $ r^{*} $. It
+causes a trade surplus because $ S > I $ under $ r^{*} $.
+In this case $ r^{*} > r $. If $ r^{*} < r $, it runs in a deficit.\\
+
+\begin{figure}[ht]
+    \centering
+		\scalebox{0.7}{\incfig{soe-s-i}}
+    \caption{SOE S I}
+    \label{fig:soe-s-i}
+\end{figure}
+
+
+
+\subsubsection{How Fiscal policy influence the Trade Balance}
+{\textbf {Fiscal Policy at Home:}}\\
+\begin{equation*}
+S = Y - C - G
+\end{equation*}
+If $ G $ goes up, $ S $ goes down. With unchanged $ r^{*} $, $ I $ is constant.
+Therefore $ NX = S - I $ goes down. Need to borrow money from abroad.
+
+If $ T $ tax goes down, $ Y - T $ goes up, $ C $ goes up, then $ S $ goes down.
+$ NX = S - I $, $ NX $ goes down. (Even though the tax cut increase private saving,
+but public savings falls by a huge amount. Therefore, total saving goes down.)
+
+\begin{figure}[H]
+\center{\includegraphics[scale =.5 ]  {figures/fical_policy_tb_deficit.png}}
+\end{figure}
+
+
+
+
+{\textbf {Fiscal Policy Abroad:}}\\
+If foreign government increase their government purchase, how does their fiscal
+policy affect us?
+
+Starting with balance trade, $ NX = 0 $, for our country.
+
+Recall, we consider the entire world as a closed economy. 
+If a large country increase their government purchase, it reduces world savings.
+Saving shift to the right, which leads to an increase in the world real interest rate
+(from $ r_1^{*} $ to $ r_2^{*} $).
+If $ r^{*} $ goes up, in our country, investment goes down (from $ I_0 $ to $ I_1 $),
+while national saving
+is constant. Therefore, we run a trade surplus ($ S > I $)
+
+\begin{figure}[ht]
+    \centering
+    \incfig{world-saving-and-investment}
+    \caption{world saving and investment}
+    \label{fig:world-saving-and-investment}
+\end{figure}
+
+
+
+{\textbf {Shifts in investment demand}}
+Start with a balanced trade.
+Now, for some reasons (govt encourage investment), local demand for investment 
+increases. $ I(r) $ shift to the right. $ r^{*} $ constant, $ S $ constant.
+The economy runs into a trade deficit $ I > S $, $ NX = S - I < 0 $. 
+
+\begin{figure}[H]
+\center{\includegraphics[scale =.5 ]  {figures/investment_shift_trade_deficit.png}}
+\end{figure}
+
+
+
+{\textbf {Why doesn't capital flow to poor countries?}}
+
+From Cobb-Douglas production function:
+\begin{align*}
+Y = F(K,L) &= AK^{\alpha}L^{1 - \alpha}\\
+MPK &= \alpha A \left( \frac{L}{K} \right) ^{1 - \alpha}
+\end{align*}
+
+It says marginal product of capital goes down as capital stock goes up.
+It means the more $ K $ an economy has, the less valuable of capital.
+In this way, capital should flows to those poor countries because they have less
+capital stock (capital is more valuable). But the reality is that capital does not
+flow to poor countries.
+
+Reasons:\\
+1. Poor country has less $ A $ (technology). So, even if $ K $ goes up, $ Y $
+is still low (low output).
+
+2. Property right is not well define in poor countries. Corruption, revolutions, 
+expropriation lead to unsafe environment for capital. Investors are scared.
+
+
+
+
+
+
+
+
+\subsection{Exchange Rate}
+
 
 
 
