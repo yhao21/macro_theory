@@ -1,0 +1,68 @@
+%% Creator: Inkscape 1.1 (1:1.1+202106031931+af4d65493e), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'structure.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{384.26006167bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.34337043)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{structure.pdf}}%
+    \put(0.34294025,0.29292085){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Population\end{tabular}}}}%
+    \put(0.22123895,0.20768878){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Work-Eligible\end{tabular}}}}%
+    \put(0.04120027,0.12163713){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Labor Force (L)\end{tabular}}}}%
+    \put(0.48391174,0.12153662){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Not in LF\end{tabular}}}}%
+    \put(0.10160706,0.03396729){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Employed\end{tabular}}}}%
+    \put(0.39012138,0.03304079){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}U\end{tabular}}}}%
+    \put(0.58908893,0.2916176){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}100\%\end{tabular}}}}%
+    \put(0.5023654,0.20750372){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}75\%\end{tabular}}}}%
+    \put(0.28416672,0.12043305){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}60\%\end{tabular}}}}%
+    \put(0.6430413,0.12079956){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}40\%\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
