@@ -345,21 +345,85 @@ food and energy products, because these two exhibit substantial short-run volati
 in price).
 
 
+{\textbf {Computing the CPI:}}
+
+\begin{figure}[H]
+\center{\includegraphics[scale =.5 ]  {figures/calculate_CPI.png}}
+\end{figure}
+Entertainment price index (EPI) gives us an examle of how BLS calcuate CPI.
+\begin{equation*}
+\text{ price index } = \frac{\text{ basket price this year }}{\text{ 
+basket price in base yeaer}} \times 100
+\end{equation*}
+
+\begin{equation*}
+\text{ inflation rate } = \frac{110 - 100}{100} \times 100 = 10\%
+\end{equation*}
 
 
-\noindent\fbox{%
-\parbox{\textwidth}{%
-{\textbf {Problems of CPI}}
+{\textbf {Using CPI to compare dollar values over time:}}
+\begin{equation*}
+P_{\text{ today's dollar }} = P_{\text{ base year dollar }}  \times 
+\frac{CPI_{\text{ today }}}{CPI_{\text{ base year }}}
+\end{equation*}
 
-1. Substitution Bias: does not consider the SE from price changing.\\
-2. Ignorance of benefit from new goods. When a new good is introduced into the mkt,
-consumers are better off because they have more products from which to choose. 
-The introduction of new goods increases the real value of the dollar, but is not
-reflected in a lower CPI.\\
-3. Unmeasured change in quality.
+Suppose the price of a house in 1924 is \$1969, CPI in 2018 is 252, CPI in 1924 is
+17, then the price of a house in 2018 dollar would be 
+\begin{equation*}
+P_{2018} = 1969  \times \frac{252}{17} = \$29188
+\end{equation*}
 
-}%
-}\\
+
+
+\subsubsection{Accuracy of CPI}
+1) CPI can be used to calculate the inflation rate. It is an indicator of national
+economic conditions. 2) employers adjust wages for inflation.
+
+
+If consumers always bought the same goods and services form the same suppliers, CPI
+would be extremely accurate. However, it is NOT.
+So the typical basket keeps changing, and this makes it difficult to measure its price.
+{\textbf {The most common concern: CPI overstates true inflation.}} Three reasons
+for this concern:
+\begin{itemize}
+\item Substitution: Substitution effect, consumer buy other goods when the price of
+		one good rises. This shift will change the typical basket. Without acknowledging
+		the substitution of less expensive items, the CPI would exaggerate the effects of
+		the price increase.
+\item Changes in quality: Sometimes, the rise in price is due the improvement of 
+		the quality of goods and services, e.g., price of movie raises from 10 to 12 
+		dollars because the theater offers 3D movies rather than 2D. This is an increase
+		the quality. But CPI only capture the change in price.
+\item New goods services and locations: the prices of new products typically drop
+		in the first few years. If CPI basket does not include the latest prices, this
+		price drop is lost. Also, online stores offer a lower price comparing to 
+		traditional retail stores. If BLS only check traditional retail stores, it would
+		overstate the price paid by consumers.
+\end{itemize}
+
+{\textbf {Solution for this upward bias: Chained CPI:}}\\
+The chained CPI is a measure of the CPI in which the typical consumer's basket of
+goods and services is updated {\textbf {monthly}}. The traditional method updates
+the basket every {\textbf {two years.}}
+
+
+=====================================\\
+The billion prices project (BPP):
+
+It is created by MIT scholars. It monitors daily price fluctuations of approximately 5 
+million items sold by roughly 300 online retailers in more than 70 countries.
+
+=====================================\\
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1266,7 +1330,9 @@ P represents the price, the number of dollars exchanged in one time.\\
 $ P  \times T $ represents the total amount to money exchanged in a year.\\
 
 V is the transactions velocity of money. It measures the number of times a dollar
-bill changes hands in a given period of time.\\
+bill changes hands in a given period of time.
+The measure of the velocity of money is usually the ratio of the gross national 
+product (GNP) to a country's money supply. \\
 
 \noindent\fbox{%
 \parbox{\textwidth}{%
@@ -1463,17 +1529,61 @@ equation (2), price level must go up ($ P $ goes up).
 
 \subsection{Hyperinflation}
 \subsubsection{Cost of hyperinflation}
-1. Menu costs also become larger under hyperinflation(change menu more often).\\
-2. Relative prices do not do a good job of reflecting true scarcity during 
-hyperinflations. When prices change frequently by large amounts, it is hard for 
-customers to shop around for the best price.\\
-3. Tax systems are also distorted by hyperinflation—but in ways that are different 
-from the distortions of moderate inflation.
+1. Menu costs also become larger under hyperinflation(change menu more often).
+
+2. Money Illusion: People do not always react rationally, even though they know 
+inflation has occurred. {\textbf {People mistakenly interpret nominal changes in 
+wages or prices as real changes}}. For example, when both price of a movie ticket and
+wages increase by 10\%, people believe movie becomes more expensive and they 
+watch less movies. But the reality is that the real wage does not change because 
+both movie ticket and wage are increased by 10\%. Economists call this money illusion.
+
+3. Tax distortions. The tax laws do not account for inflation (tax on nominal terms).
+Consider the capital gains taxes, you bought a house in 1990 for \$130000 and then
+sold it in 2020 for \$260000. You made a \$130000 capital gain which will be taxed.
+However, if the CPI rose exactly the same amount from 130 in 1990 to 260 in 2020, 
+the real value of your house does not change. It increase in nominal value is 
+completely due to the inflation. But you need to pay a tax on it. 
+
+4. Shoe-Leather Cost. Inflation is a tax on holding money. As prices rise with 
+inflation, people hold less money, which means more trips to the bank to make
+withdrawals. And the resources that are wasted when people change their behavior to
+avoid holding money is called Shoe-Leather cost.
+
+5. Future price level Uncertainty. It takes time for a firm to produce output from
+hiring people, purchasing capital, making investment, etc. Firms need to borrow money
+from HHs. It can take a long time for a firm to produce the output. The inflation 
+during this period affects the real value of the future dollars. It makes long-term
+investment more risky, if inflation increases. And it can lead to lower economic 
+output, which is GDP.
+
+6. Wealth redistribution. Inflation can also redistribute wealth between borrowers and
+lenders. Suppose you borrow 100 from bank with the promise of paying back 200. If the
+inflation rate rises during this period, the extra 100 dollars (200-100) you paid are
+less value than today. Hence, you benefit from the rise of inflation, but the bank
+is hurt. If you and the bank perfectly expect the rise of the inflation rate, and
+the bank asks you to repay more, then it would not be the problem. 
+
+7. Price confusion. Firms adjust their production according to the price signal. If
+price rises, they produce more, otherwise, produce less. Inflation can be misleading.
+Firms do not know if the rise in prices is caused by real increase in demand or 
+by inflation.
+
 
 \subsubsection{The causes of hyperinflation}
-Most hyperinflations begin when the government has inadequate tax revenue to pay
+1. Most hyperinflations begin when the government has inadequate tax revenue to pay
 for its spending. (governments are unable to issue debt at that time because people
 believe gov'ts are in bad credit)
+
+2. Large government debts often spur governments to choose to increase the money
+supply rapidly.
+
+3. Government try to stimulate the economy (toward more rapid growth rate) in a short
+period of time.
+
+
+\subsubsection{Disinflation vs. Deflation}
+Differentiate between disinflation and deflation. Deflation is a negative growth rate in inflation. Disinflation is a reduction in the previous growth rate though it need not be negative. 
 
 
 \subsubsection{Monetary Neutrality}
