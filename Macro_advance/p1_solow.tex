@@ -146,7 +146,7 @@ f'(k)&= \alpha k ^{\alpha - 1}
 
 
 
-\subsection{Accumulation of inputs}
+\section{Accumulation of inputs}
 $ K_0, L_0, A_0 $ are given and strictly positive.
 
 Growth rate of $ L $ and $ A $
@@ -206,7 +206,7 @@ $ k $ is rising.
 $ k $ converges to $ k ^{*} $.
 
 
-\subsection{Balanced growth path}
+\section{Balanced growth path}
 
 \begin{equation*}
 k = \frac{K}{AL} \rightarrow K = ALk, \quad g_{K} = g_{A} + g_{L} + 0 = g + n
@@ -225,6 +225,7 @@ by the rate of technological progress, $ g $.}}
 
 
 \subsection{The impact of a change in the saving rate}
+\subsubsection{The impact on output}
 
 \begin{figure}[H]
 \center{\includegraphics[scale =.5 ]  {figures/change_in_saving.png}}
@@ -244,20 +245,164 @@ Hence, change in the saving rate has a {\textbf {level effect}}, but not a
 {\textbf {growth effect}}.
 
 
-\subsection{The impact on Consumption}
+\subsubsection{The impact on consumption}
+
+Recall, $ c = (1 - s)f(k) $, $ c $ is consumption per effective labor.
+
+If $ s $ permanently goes up, $ c $ jumps down immediately, and then rises gradually
+as $ k $ is growing to the new SS level.
+
+Given the first two equations below, we can derive the $ c^{*} $ at SS as a function
+of $ k ^{*} $
+\begin{align*}
+c^{*} &= f(k ^{*}) - sf(k ^{*})\\
+sf(k ^{*}) &= (n + g + \delta)k ^{*}\\
+c^{*} &= f(k ^{*}) - (n + g + \delta)k ^{*}
+\end{align*}
+
+Recall that $ k ^{*} $ is a function of $ n, g, \delta, s $. We can find the impact
+of $ s $ on $ c^{*} $ by differentiating $ c^{*} $ wrt $ s $.
+\begin{align*}
+\frac{\partial c^{*} }{\partial s }&= f'(k ^{*})\frac{\partial k ^{*} }{\partial s }
+ - (n + g + \delta) \frac{\partial k ^{*} }{\partial s }\\
+&= [f'(k ^{*}) - (n + g + \delta)]\frac{\partial k ^{*} }{\partial s }
+\end{align*}
+
+We know $ \frac{\partial k ^{*} }{\partial s } > 0 $. Hence,
+
+if  $ f'(k ^{*}) < (n + g + \delta) $, invest more, so, $ c $ goes down.
+
+if  $ f'(k ^{*}) > (n + g + \delta) $, invest less, so, $ c $ goes up.
+
+if  $ f'(k ^{*}) = (n + g + \delta) $, a marginal change in $ s $ has no effect on 
+$ c $.
+These three scenarios above is shown in figures below:\\
+
+\newpage
+
+Case 1: $ f'(k ^{*}) < (n + g + \delta) $
+\begin{figure}[ht]
+    \centering
+    \incfig{mpk-less-than-breakeven-level}
+    \caption{mpk less than breakeven level}
+    \label{fig:mpk-less-than-breakeven-level}
+\end{figure}
+
+Recall, $ c = f(k) - (n + g + \delta)k $, hence the distance between these two curves
+is the consumption level per effective labor.
+
+It shows that if $ f'(k ^{*}) < (n + g + \delta) $, a rise in $ s $ will cause a 
+decrease in consumption.\\
 
 
 
 
+Case 2: $ f'(k ^{*}) > (n + g + \delta) $
+\begin{figure}[ht]
+    \centering
+		\scalebox{.7}{\incfig{mpd-greater-than-breakeven-level}}
+    \caption{mpd greater than breakeven level}
+    \label{fig:mpd-greater-than-breakeven-level}
+\end{figure}
+
+It says if $ f'(k ^{*}) > (n + g + \delta) $, a rise in $ s $ will cause an increase in
+consumption.
 
 
 
+\section{Long-run equilibrium}
+Now we want to measure the effect of a change of $ s $ on the output $ y $.
+So we want to find $ \frac{\partial y^{*} }{\partial s } $.
+
+Recall, 
+\begin{equation*}
+y = f(k), \quad y^{*} = f(k ^{*}) \rightarrow y^{*} = f(k ^{*}(s,n,g,\delta))
+\end{equation*}
+Differentiate $ y^{*} $ wrt $ s $,
+\begin{equation*}
+\frac{\partial y }{\partial s  } = f'(k ^{*})\frac{\partial k ^{*} }{\partial s }
+\end{equation*}
+What is $ \frac{\partial k ^{*} }{\partial s } $?
+\begin{align*}
+\dot{k} &= sf(k) - (n + g + \delta)k = 0, \text{ at S.S }.\\
+sf(k ^{*}) &= (n + g + \delta)k ^{*}\\
+f(k ^{*}) + sf'(k ^{*})\frac{\partial k ^{*} }{\partial s }&= (n + g + \delta)
+\frac{\partial k ^{*} }{\partial s }, \text{ differentiate wrt  }s\\
+\frac{\partial k ^{*} }{\partial s }&= \frac{f(k ^{*})}{(n + g + \delta) - sf'(k ^{*})}
+\end{align*}
+Now we have $ \frac{\partial k ^{*} }{\partial s } $, plug it into $ \frac{\partial y }
+{\partial s } $ equation above, 
+\begin{align*}
+\frac{\partial y^{*} }{\partial s }&= f'(k ^{*})\frac{f(k ^{*})}{(n + g + \delta) - 
+sf'(k ^{*})}\\
+\frac{s}{y^{*}}\frac{\partial y^{*} }{\partial s }&= \frac{s}{f(k ^{*})}
+\frac{f'(k ^{*})f(k ^{*})}{(n + g + \delta) - sf'(k ^{*})}
+\end{align*}
+what is $ s $?
+Recall, 
+\begin{align*}
+sf(k ^{*})&= (n + g + \delta)k\\
+s &= \frac{(n + g + \delta)k}{f(k ^{*})}
+\end{align*}
+
+Hence, 
+\begin{align*}
+\frac{s}{y^{*}}\frac{\partial y^{*} }{\partial s }&= 
+\frac{(n + g + \delta)k ^{*}}{f(k ^{*})f(k ^{*})}
+\frac{f'(k ^{*})f(k ^{*})}{(n + g + \delta) - \frac{(n + g + \delta)k ^{*}}{f(k ^{*})}
+f'(k ^{*})}\\
+&= \frac{f'(k ^{*})k ^{*}}{f(k ^{*}) - k ^{*}f'(k ^{*})}\\
+&= \frac{\frac{f'(k ^{*})k ^{*}}{f(k ^{*})}}{1 - \frac{f'(k ^{*})k ^{*}}{f(k ^{*})}}
+\end{align*}
+
+What is $ \frac{f'(k ^{*})k ^{*}}{f(k ^{*})} $? It is the elasticity of output wrt
+capital:
+\begin{equation*}
+y = f(k), \quad \frac{\partial y }{\partial k } = f'(k), \quad
+\frac{k}{y}\frac{\partial y }{\partial k } = \frac{f'(k)k}{f(k)} = \alpha_{K}(k ^{*})
+\end{equation*}
+
+So, we can rewrite the elasticity of output wrt to the saving rate as the following,\\
+
+\noindent\fbox{%
+\parbox{\textwidth}{%
+\begin{equation*}
+\frac{s}{y^{*}}\frac{\partial y^{*} }{\partial s }= \frac{\alpha_{K}(k ^{*})}{
+1 - \alpha_{K}(k ^{*})}
+\end{equation*}
+}%
+}\\
+
+
+{\textbf {Intuition:}}\\
+Capital earns its MPK. And $ MPK = \frac{\partial Y }{\partial K } = f'(k) $.
+
+Then, the total amount earned by capital (per effective labor) on the balanced growth
+path (SS) is $ k ^{*}f'(k ^{*}) $.
+
+And the share of capital gain in the total income would be $ \frac{k ^{*}f'(k ^{*})}{
+f(k ^{*})} $, or $ \alpha_{K}(k ^{*}) $. 
+It says {\textbf {the elasticity of income wrt capital is equal to the share of 
+capital gain in the total income.}}
+{\underline {Hence, we can use data on the share of income going to capital to
+estimate $ \alpha_{K}(k ^{*}) $}}.
+
+
+In most countries, the share of income going to capital is about $ \frac{1}{3} $.
+Hence, the elasticity of output wrt saving would be $ \frac{1}{2} $. 
+\begin{equation*}
+\frac{\frac{ \Delta y}{y}}{\frac{ \Delta s}{s}} = 0.5
+\end{equation*}
+
+It says even the saving rate rises 100\%, output only increases 50\%.
 
 
 
+\section{The speed of Convergence}
 
-
-
+We also want to know how fast those effects occur. For simplicity, we focus on $ k $
+rather than $ y $. {\textbf {Our goal}} is to determine how rapidly $ k $ approaches
+$ k ^{*} $.
 
 
 

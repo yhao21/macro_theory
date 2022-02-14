@@ -1,0 +1,229 @@
+
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmin}{arg\,min} % thin space, limits underneath in displays
+\DeclareMathOperator*{\argmax}{arg\,max} % thin space, limits underneath in displays
+\newtheorem{thm}{Theorem}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage{indentfirst}
+\setlength{\parindent}{0em}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\doublespacing
+\usepackage[flushleft]{threeparttable}
+\usepackage{booktabs,caption}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[sort,comma]{natbib}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+\newcommand{\incfig}[1]{%
+\def\svgwidth{\columnwidth}
+\import{./figures/}{#1.pdf_tex}
+}
+
+
+
+
+\title{}
+\author{}
+\date{}
+
+
+\begin{document}
+
+Now introduce two models that resemble the Solow model but in which the dynamics of
+economic aggregates are determined by decisions at the microeconomic level.
+
+In this Note, we introduce the Ramsey-Cass-Koopmans model. It avoids all mkt 
+imperfections and all inssues raised by heterogeneous HHs nd links among generations.
+
+In the next Note, we introduce Overlapping-generations model developed by Diamond 
+(1965).
+The key difference of Diamond's model is that it assumes continual entry of new HHs
+into the economy.
+
+
+
+
+
+
+\section{Assumptions}
+
+General Assumptions:
+
+1. Labor and technology grow at an exogenous growth rate $ n $ and $ g $.
+
+2. Competitive firms rent capital and hire labor to produce.
+
+3. A fixed number of infinitely lived HHs.
+
+
+
+\subsection{Firms}
+
+Production Fn: CRTS
+\begin{equation*}
+Y = F(K,AL)
+\end{equation*}
+
+
+Capital accumulation is determined by output and consumption, same as the Solow model. 
+However, we now assume {\textbf {No depreciation}}.
+
+\begin{equation*}
+\dot{K}(t) = Y(t) - \xi(t)
+\end{equation*}
+
+\begin{align*}
+		\xi&: \text{ total consumption. }\\
+		C &: \text{ consumption per person. }\\
+		c &: \text{ consumption per effective labor. }
+\end{align*}
+
+
+
+\subsection{Households}
+
+1. The size of each HH grows at rate $ n $. 
+
+2. Each member of the HH supplies 1 unit of labor.
+
+3. HH's income goes to consumption and saving.
+
+\begin{align*}
+H &: \text{ the number of HHs }\\
+K(0)&: \text{ initial capital in the economy }\\
+\frac{K(0)}{H} &: \text{ initial capital held by each HH }\\
+C(t) &: \text{ consumption per person }\\
+L(t) &: \text{ total population in the economy }\\
+\frac{L(t)}{H} &: \text{ the number of members of each HH }\\
+u(C(t))\frac{L(t)}{H} &: \text{ HH's utility at time $ t $ }\\
+\rho &: \text{ discount rate. HH is impatient if $ \rho $ is large.}
+\end{align*}
+
+A discrete model:
+\begin{equation*}
+U = \sum\limits_{t = 0} ^\infty \left( \frac{1}{1 + \rho} \right) ^{t}
+u(C(t))\frac{L(t)}{H}
+\end{equation*}
+
+
+
+Convert it to a continuous model:
+\begin{equation*}
+U = \int_{t = 0}^{\infty } e^{ - \rho t}u(C(t))\frac{L(t)}{H}dt
+\end{equation*}
+The utility fn:
+\begin{equation*}
+u(C(t)) = \frac{C(t)^{1 - \theta}}{1 - \theta}, \quad \theta > 0, \quad
+\rho - n - (1 - \theta)g > 0
+\end{equation*}
+This function form is needed for the convergence (to the SS). It is known as 
+{\textbf {constant-relative-risk-aversion}} (CRRA) utility.
+The coefficient of relative risk aversion ($  - \frac{C u''}{u'} $) is $ \theta $,
+and is independent from $ C $.
+
+When $ \theta $ is smaller, MU falls more slowly (check $ u'' $) as $ C $ rises. So
+HH is more willing to allow consumption to vary over time.
+
+When $ \theta \rightarrow 1 $, it becomes $ u(C) = \ln C $
+
+Utility will not explode to infinity because of  $ \rho - n - (1 - \theta)g > 0 $.
+
+
+
+
+
+
+\section{Model}
+\subsection{Firms}
+
+No depreciation, so capital earn its MPK.
+\begin{equation*}
+r(t) = f'(k(t))
+\end{equation*}
+
+The MPL is 
+\begin{equation*}
+		\frac{\partial F(K, AL) }{\partial L } = A[f(k) - kf'(k)]
+\end{equation*}
+\noindent\fbox{%
+\parbox{\textwidth}{%
+Proof:
+\begin{align*}
+\frac{\partial F(K,AL) }{\partial L }&= \frac{\partial AL F(\frac{K}{AL},1) }
+{\partial L }\\
+&= A \left[ F(\frac{K}{AL},1) + L F'(\frac{K}{AL},1)( - \frac{K}{AL^{2}}) \right] \\
+&= A \left( f(k) - Lf'(k)\frac{k}{L} \right), \quad k = \frac{K}{AL} \\
+&= A [ f(k) - kf'(k)]
+\end{align*}
+}%
+}\\
+
+
+
+So the real wage, $ W(t) $, is 
+\begin{equation*}
+		W(t) = MPL = A(t)[f(k(t)) - k(t)f'(k(t))]
+\end{equation*}
+
+The wage per unit of effective labor is
+\begin{equation*}
+w(t) =f(k) - kf'(k) =  f(k(t)) - k(t)f'(k(t))
+\end{equation*}
+
+
+\subsection{Household Budget constraint}
+
+
+
+To allow $ r $ changing over time, we define 
+\begin{equation*}
+R(t) = \int_{\tau = 0}^{t} r(\tau)d \tau
+\end{equation*}
+
+One unit of investment at time 0 yields $ e^{R(t)} $ units. It shows the continuously
+compounding interest over the period [0,t].
+
+The value of one unit of output at time $ t $ in terms of output at time 0 is
+$ e^{ - R(t)} $. If $ r $ is constant, $ R(t) = r t $
+
+
+ $  $.
+\begin{align*}
+\text{ Labor income for a HH }&:W(t)\frac{L(t)}{H}\\
+\text{ Consumption expenditure for a HH }&: C(t)\frac{L(t)}{H}\\
+\text{ initial wealth }&: \frac{1}{H} \text{ of total wealth at time 0 }
+= \frac{K(0)}{H}
+\end{align*}
+
+
+
+{\textbf {HH BC}}:
+
+\begin{equation*}
+\int_{t = 0}^{\infty } e^{ - R(t)}C(t)\frac{L(t)}{H}d t \le 
+\frac{K(0)}{H} + \int_{t = 0}^{\infty } e^{ - R(t)} W(t)\frac{L(t)}{H} d t
+\end{equation*}
+
+
+
+
+
+
+
+
+
+
+\end{document}
+

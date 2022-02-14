@@ -1,0 +1,69 @@
+%% Creator: Inkscape 1.1 (1:1.1+202106031931+af4d65493e), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'mpd-greater-than-breakeven-level.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{556.40860009bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.51672664)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{mpd-greater-than-breakeven-level.pdf}}%
+    \put(0.65542386,0.50034088){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ f(k) $\\\end{tabular}}}}%
+    \put(0.65259495,0.22278587){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ s_{L}^{\text{ new }}f(k) $\\\end{tabular}}}}%
+    \put(0.69287226,0.15956619){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ s_{L}^{\text{ old }}f(k) $\\\end{tabular}}}}%
+    \put(0.16488159,0.00508634){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ k_0^{*} $\\\end{tabular}}}}%
+    \put(0.91225781,0.0055879){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}k\end{tabular}}}}%
+    \put(-0.00064237,0.48893149){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y\end{tabular}}}}%
+    \put(0.22279127,0.00569082){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ k_1^{*} $\\\end{tabular}}}}%
+    \put(0.68042882,0.37969506){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ (n + g + \delta)k $\\\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{mpd-greater-than-breakeven-level.pdf}}%
+    \put(0.12945998,0.22385778){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ c_0 $\\\end{tabular}}}}%
+    \put(0.26864331,0.28362596){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ c_1 $\\\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
