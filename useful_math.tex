@@ -40,7 +40,140 @@
 
 
 \begin{document}
-\maketitle
+
+
+
+\section{Infinite Horizon}
+
+Utility function in class:
+\begin{equation*}
+U = \sum\limits_{t = 0} ^\infty \frac{1}{(1 + \rho)^{t}}	u(C_{t}) = 
+\sum\limits_{t = 0} ^\infty \beta^{t}u(C_{t})	
+\end{equation*}
+\begin{itemize}
+		\item $ \rho $: marginal rate of time preference (impatience of HH), internal 
+				discount rate. $ \beta = \frac{1}{1 + \rho} $. $ \beta \in (0,1) $, 
+				$ \rho > 0 $.
+		\item If $ \rho = 0 $, HH values consumption next period as much as this period.
+				If $ \rho = 0 $, the life-time utility could goes to $ \infty  $. Not good.
+		\item If $ \rho > 0 $, the larger the $ \rho $ is, the less value of 
+				$ \frac{1}{1 + \rho} $, the more impatient the HH is (the utility of consumption
+				in the next period is being weighted smaller and smaller). Consider a two 
+				period case as an example.
+\end{itemize}
+
+
+Two period case:
+\begin{equation*}
+U = u(C_0) + \frac{1}{1 + \rho}u(C_{1})
+\end{equation*}
+
+
+
+\subsection{Math: continuous compounding}
+Interest rate: $ r $. Initial asset: $ a $.
+
+If we compound this annually, after $ t $ years, you receive
+\begin{equation*}
+\text{ you receive }: a(1 + r)^{t}
+\end{equation*}
+
+If we compound 2 times per year, your balance after the first year:
+\begin{equation*}
+a(1 + \frac{r}{2})^{2}
+\end{equation*}
+If we compound 2 times per year, after $ t $ years, you receive
+\begin{equation*}
+a \left( (1 + \frac{r}{2})^{2} \right) ^{t}
+\end{equation*}
+
+If we compound many times (n times) per year, after $ t $ years, you receive
+\begin{equation*}
+a \left( (1 + \frac{r}{n})^{n} \right) ^{t}
+\end{equation*}
+
+If we compound infinite times per year (n goes to $ \infty  $), it becomes a continuous
+case, after $ t $ years, you receive
+\begin{equation*}
+\lim_{n \to \infty} a \left[  \left( 1 + \frac{r}{n} \right)^{n}  \right] ^{t}
+\end{equation*}
+
+
+\begin{align*}
+\lim_{n \to \infty} \left( 1 + \frac{1}{n} \right) ^{n} &= e\\
+\lim_{n \to \infty} \left( 1 + \frac{r}{n} \right) ^{n} &= e^{r}\\
+\lim_{n \to \infty} \left[ \left( 1 + \frac{r}{n} \right)^{n}  \right] ^{t}&= e^{r t}
+\end{align*}
+
+If we compound the time preference $ \rho $ infinite times per year,
+$ \frac{1}{1 + \rho} $
+becomes
+\begin{equation*}
+ \frac{1}{ \lim_{n \to \infty}\left( 1 + \frac{\rho}{n} \right) ^{n}} = e^{-\rho}
+\end{equation*}
+
+Further, if we compound it infinite times per year for $ t $ years,
+\begin{equation*}
+\left(  \frac{1}{ \lim_{n \to \infty}\left( 1 + \frac{\rho}{n} \right) ^{n}}  \right) 
+^{t} = e^{ - \rho t}
+\end{equation*}
+
+Now we finish the conversion below
+\begin{equation*}
+ \left( \frac{1}{1 + \rho} \right) ^{t}	
+\rightarrow 
+\left(  \frac{1}{ \lim_{n \to \infty}\left( 1 + \frac{\rho}{n} \right) ^{n}}  \right) 
+^{t} = e^{ - \rho t}
+\end{equation*}
+
+
+Hence we can convert the discrete life-time utility function (LTU) to continuous LTU.
+\begin{equation*}
+\sum\limits_{t = 0} ^\infty \left( \frac{1}{1 + \rho} \right) ^{t} u(C_{t})
+\rightarrow
+\int_{t = 0}^{\infty } e^{ - \rho t}u(C(t))dt
+\end{equation*}
+
+
+
+
+\subsection{Interpretation}
+\begin{equation*}
+e^{r t} = \lim_{n \to \infty}\left[ 
+\left( 1 + \frac{r}{n} \right) ^{n}
+\right] ^{t}
+\end{equation*}
+where $ r $ is the growth rate, $ t $ is the length of time.
+
+Therefore, if the growth rate is $ g + n $ and we want to study in a very small amount 
+of time, $ \Delta t $, we can use
+\begin{equation*}
+e^{(g + n) \Delta t}
+\end{equation*}
+
+
+
+\section{Derivative of an integral}
+Given
+\begin{equation*}
+F(x) = \int_{a}^{x} f(t)d t
+\end{equation*}
+Then, the derivative wrt $ x $ would be
+\begin{equation*}
+F'(x) = f'(x)
+\end{equation*}
+
+For example, the derivative wrt $ t $
+\begin{align*}
+R(t) &= \int_{\tau = 0}^{t} r(\tau)d \tau\\
+R'(t)&= r(t)
+\end{align*}
+
+
+
+
+
+
 \section{Taylor Exansion}
 \begin{align*}
 f(x)&= \sum\limits_{n = 0} ^\infty \frac{f^{(n)}(a)(x - a)^{n}}{n!}\\
