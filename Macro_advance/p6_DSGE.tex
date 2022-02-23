@@ -1,0 +1,170 @@
+
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmin}{arg\,min} % thin space, limits underneath in displays
+\DeclareMathOperator*{\argmax}{arg\,max} % thin space, limits underneath in displays
+\newtheorem{thm}{Theorem}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage{indentfirst}
+\setlength{\parindent}{0em}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\doublespacing
+\usepackage[flushleft]{threeparttable}
+\usepackage{booktabs,caption}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[sort,comma]{natbib}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+\newcommand{\incfig}[1]{%
+\def\svgwidth{\columnwidth}
+\import{./figures/}{#1.pdf_tex}
+}
+
+
+
+
+\title{Dynamic Stochastic General Equilibrium}
+\author{}
+\date{}
+
+
+\begin{document}
+\maketitle
+Price changes are not only state dependent, they are partly time dependent.
+
+Sections 7.2 through 7.4 then consider three baseline models
+of time-dependent price adjustment:
+
+the Fischer, or Fischer-Phelps-Taylor,
+model; the Taylor model; and the Calvo model. 
+
+All three models posit that prices (or wages) are set by multiperiod contracts or 
+commitments. In each period, the contracts governing some fraction of prices expire and 
+must be renewed; expiration is determined by the passage of time, not economic
+developments.
+
+{\textbf {The central result}} of the models is that multiperiod contracts
+lead to gradual adjustment of the price level to nominal disturbances. As a
+result, aggregate demand disturbances have persistent real effects.
+
+
+{\textbf {Differences:}}
+The Fischer model assumes that prices are predetermined but not fixed.
+That is, when a multiperiod contract sets prices for several
+periods, it can specify a different price for each period. 
+
+In the Taylor and Calvo models, in contrast, prices are fixed: a contract must specify 
+the same price each period it is in effect.
+
+
+Section 7.5 then turns to two baseline models of state-dependent price
+adjustment, the Caplin-Spulber and Danziger-Golosov-Lucas models
+In both, the only barrier to price adjustment is a constant fixed cost. There are two
+differences between the models.
+
+{\textbf {First,}} money growth is always positive
+in the Caplin-Spulber model, while the version of the Danziger-Golosov-
+Lucas model we will consider assumes no trend money growth. 
+
+{\textbf {Second,}} the
+Caplin-Spulber model assumes no firm-specific shocks, while the Danziger-
+Golosov-Lucas model includes them. Both models deliver strong results
+about the effects of monetary disturbances, but for very different reasons.
+
+Section 7.7 considers two more models of dynamic price adjustment: the Calvo-with-
+indexation model and the Mankiw Reis model
+These models are more complicated than the models of the earlier sections, but appear 
+to have more hope of fitting key facts about inflation dynamics.
+
+
+Section 7.8 presents
+a complete DSGE model with nominal rigidity the canonical three-equation
+new Keynesian model of Clarida, Galí, and Gertler.
+But also like the baseline RBC model, the evidence for its key ingredients is weak,
+In Section 7.9 that together the
+ingredients make predictions about the macroeconomy that appear to be
+almost embarrassingly incorrect.
+
+
+
+
+\section{Common framework, dynamic new Keynesian models}
+\subsection{HHs}
+Utility from consumption and disutility from working.
+\begin{align*}
+		{\rm I\!{U}} &= \sum\limits_{t =0} ^\infty \beta^{t}[U(C_{t}) - V(L_{t})]	, \beta \in (0,1)\\
+A_{t + 1}&= M_{t} + (A_{t} + W_{t}L_{t} - P_{t}C_{t} - M_{t})(1 + i_{t})\\
+C_{t}&= \left[ A_{t} + W_{t}L_{t} - M_{t} - \frac{A_{t + 1} - M_{t}}{1 + i_{t}} \right] 
+\frac{1}{P_{t}}\\
+&= a_{t} + w_{t}L_{t} - \frac{i_{t}m_{t}}{1 + i_{t}} - \frac{a_{t + 1}}{1 + r_{t}}\\
+U(C_{t})&= \frac{C_{t}^{1 - \theta}}{1 - \theta}, \quad \theta > 0\\
+V(L_{t})&= \frac{B}{\gamma} L_{t}^{\gamma}, \quad B > 0, \quad \gamma > 1
+\end{align*}
+Price level, $ P_{t} $.
+
+FOC wrt $ L_{t} $,
+\begin{align*}
+V'(L_{t}) &= U'(C_{t})\frac{W_{t}}{P_{t}}\\
+\frac{V'(Y_{t})}{U'(Y_{t})}&= \frac{W_{t}}{P_{t}}
+\end{align*}
+
+Production function:
+\begin{equation*}
+Y_{i} = L_{i}, \quad i:= \text{ Firm }i
+\end{equation*}
+Production function is one-for-one and the only possible use of output is for 
+consumption, in equilibrium, $ C_{t} = L_{t} = Y_{t} $
+
+Plug in the utility function,
+\begin{equation*}
+\frac{W_{t}}{P_{t}} = BY_{t}^{\theta + \gamma - 1}
+\end{equation*}
+The new Keynesian IS curve holds:
+
+Starting from FOC of $ C $:
+\begin{align*}
+C_{t}^{ - \theta}&= \beta(1 + r_{t})C_{t + 1}^{ - \theta}\\
+\ln C_{t} &= \ln C_{t + 1} - \frac{1}{\theta}\ln (1 + r_{t})\beta\\
+\ln Y_{t} &= a + \ln Y_{t + 1} - \frac{1}{\theta}r_{t}
+\end{align*}
+where $ a =  - \frac{1}{\theta}\ln \beta $, $ \ln (1 + r) \approx \ln r $.
+
+
+\subsection{Firms}
+Firm $ i $ faces the demand function:
+\begin{equation*}
+Y_{it} = Y_{t}\left( \frac{P_{it}}{P_{t}} \right) ^{ - \eta}
+\end{equation*}
+
+where $ \eta $ is the elasticity of substitution, $ \eta > 1 $.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\bibliographystyle{plainnat}
+\bibliography{my_bib}
+
+\end{document}
+
