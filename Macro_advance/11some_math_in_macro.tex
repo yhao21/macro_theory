@@ -134,7 +134,26 @@ Hence we can convert the discrete life-time utility function (LTU) to continuous
 
 
 
+\section{How to linearize the model}
+Let $  \widehat{x} $ denote the percentage deviation of variable $ x $ from its
+steady state level,
+\begin{equation*}
+ \widehat{x_{t}} = \frac{x_{t} - x^{SS	}}{x^{SS}}
+\end{equation*}
+then we can rewrite it as
+\begin{equation*}
+x_{t} = (1 +  \widehat{x}_{t})x^{SS}.
+\end{equation*}
 
+{\textbf {Three rules in linearization}}
+\begin{align*}
+u_{t}w_{t}&= u^{SS}(1 +  \widehat{u_{t}})w^{SS}(1 +  \widehat{w}_{t})\approx u^{SS}
+w^{SS}(1 +  \widehat{u}_{t} +  \widehat{w}_{t})\\
+u^{a}_{t}&= \left[ (1 +  \widehat{u}_{t})u^{SS} \right] ^{a} = (1 +  \widehat{u}_{t})^
+{a} \left( u^{SS} \right) ^{a} \approx (1 + a  \widehat{u}_{t})(u^{SS})^{a}\\
+\ln u_{t} &= \ln u^{SS}(1 +  \widehat{u}_{t}) = \ln u^{SS} + \ln (1 +  \widehat{u}_{t})
+\approx (\ln u^{SS}) +  \widehat{u}_{t}
+\end{align*}
 
 
 
