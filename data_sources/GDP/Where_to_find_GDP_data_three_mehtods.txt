@@ -1,0 +1,31 @@
+Introduction:
+		https://www.bea.gov/resources/methodologies/nipa-handbook/pdf/chapter-02.pdf
+		Starting from page 8
+
+
+
+Three methods of GDP measurement:
+
+Method 1: Expenditure (national income account identity)
+		Known as the expenditures approach
+
+		Go to Bea
+		https://apps.bea.gov/iTable/iTable.cfm?reqid=19&step=2#reqid=19&step=2&isuri=1&1921=survey
+		Click on Section 1
+		Table 1.1.5. Gross Domestic Product
+
+
+
+Method 2: The sum of income payments and other costs incurred in the production
+		Known as the income approach
+
+		Go to Bea
+		https://apps.bea.gov/iTable/iTable.cfm?reqid=19&step=2#reqid=19&step=2&isuri=1&1921=survey
+		Click on Section 1
+		Table 1.10. Gross Domestic Income (GDI)
+
+
+
+
+There are many other ways to measure the national income (page 13)
+		https://www.bea.gov/resources/methodologies/nipa-handbook/pdf/chapter-02.pdf
