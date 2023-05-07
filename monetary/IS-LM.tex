@@ -1,0 +1,402 @@
+
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmin}{arg\,min} % thin space, limits underneath in displays
+\DeclareMathOperator*{\argmax}{arg\,max} % thin space, limits underneath in displays
+\newtheorem{thm}{Theorem}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage{indentfirst}
+\setlength{\parindent}{0em}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\doublespacing
+\usepackage[flushleft]{threeparttable}
+\usepackage{booktabs,caption}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[sort,comma]{natbib}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+\newcommand{\incfig}[1]{%
+\def\svgwidth{\columnwidth}
+\import{./figures/}{#1.pdf_tex}
+}
+
+
+
+
+\title{IS-LM model}
+\author{}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+
+
+We continue our study of economic fluctuations by looking more closely at aggregate demand. Our goal is to identify the variables that shift the aggregate demand curve, causing fluctuations in national income.
+
+The goal of the model is to show what determines national income for a given price level. There are two ways to interpret this exercise.
+\begin{itemize}
+\item We can view the IS–LM model as showing what causes income to change in the short run when the price level is fixed because all prices are sticky.
+\item Or we can view the model as showing what causes the aggregate demand curve to shift.
+\end{itemize}
+ 
+
+
+IS stands for “investment” and “saving,” and the IS curve represents what’s going on in the market for goods and services.
+
+LM stands for “liquidity” and “money,” and the LM curve represents what’s happening to the supply and demand for money. 
+
+
+
+\section{Building block of IS curve: The Keynesian Cross}
+Keynes believed that the problem during recessions and depressions is inadequate spending. The Keynesian cross models this insight.
+
+Identify two concepts:
+\begin{itemize}
+\item Actual expenditure is the amount households, firms, and the government spend on goods and services. (This is the actual production from firms)
+\item Planned expenditure is the amount households, firms, and the government would like to spend on goods and services. (This is the actual sales of, actual demand for,  goods and services.)
+\end{itemize}
+
+
+Therefore, 
+\begin{itemize}
+\item if actual expenditure $ > $ planned expenditure, firms produce too much, inventory
+		is higher. Firms choose to produce less in the next period.
+\item if actual expenditure $ < $ planned expenditure, firms produce too less. Consumers
+		are eating inventories. Firms choose to produce more in the next period.
+\end{itemize}
+
+
+\subsection{Model set up}
+\begin{itemize}
+\item The economy is closed, no NX. 
+		\begin{equation*}
+		PE = C + PI + G
+		\end{equation*}
+
+\item Consumption:
+		\begin{equation*}
+		C = C(Y - T) = A + MPC  \times (Y - T), \text{ MPC: marginal propensity to consume }
+		\end{equation*}
+
+\item PI and G are constant:
+		\begin{equation*}
+		PI =  \overline{PI}, \quad G =  \overline{G}
+		\end{equation*}
+
+
+\item Therefore, 
+		\begin{equation*}
+		PE = A + MPC  \times (Y - T) +  \overline{PI} +  \overline{G}
+		\end{equation*}
+\end{itemize}
+
+
+
+
+\subsection{Equilibrium}
+In equilibrium, actual expenditure = planned expenditure, i.e., $ Y = PE $
+
+\begin{figure}[H]
+\center{\includegraphics[scale =.5 ]  {figures/equilibrium_keynesian_cross.png}}
+\end{figure}
+
+
+
+\begin{itemize}
+\item When $ Y_1 > PE $, production $ > $  sales, inventory $ \uparrow $, 
+		unplanned investment $ \uparrow $, firms produce less in the next period.
+\item When $ Y_1 < PE $, production $ < $  sales, inventory $ \downarrow $, 
+		unplanned investment $ \downarrow $, firms produce more in the next period.
+\end{itemize}
+
+
+
+\subsection{Fiscal policy and spending multiplier}
+\begin{equation*}
+		Y = A + MPC  \times (Y - T) +  \overline{PI} +  \overline{G}  
+\end{equation*}
+\begin{itemize}
+\item A rise in G will first increase Y on the left side.
+\item The rise of Y on the left side increases consumption, since C is determined by
+		$ (Y - T) $.
+\item The rise in C will again foster the growth of Y.
+\item Hence, in Keynesian cross, a increase in G leads to a rise of Y that is greater
+		than the change in G, i.e., $ \Delta Y > \Delta G $.
+\end{itemize}
+
+
+\subsubsection{Spending multiplier}
+\begin{align*}
+		Y &= A + MPC  \times (Y - T) +  \overline{PI} +  \overline{G}  \\
+		Y &= A + MPC  \times Y  - MPC  \times  T +  \overline{PI} +  \overline{G}  \\
+		Y  -  MPC  \times Y &=  \overline{G}  - MPC  \times T + Z, \quad Z = A +  \overline{PI}\\
+		(1 - MPC)Y &=  \overline{G} - MPC  \times T + Z\\
+		Y&= \frac{1}{1 - MPC}   \times \overline{G} - \frac{MPC}{1 - MPC} \times T + 
+		\frac{1}{1 - MPC} \times  Z
+\end{align*}
+Spending multiplier:
+\begin{equation*}
+\frac{dY}{dG} = \frac{1}{1 - MPC}
+\end{equation*}
+
+
+\subsubsection{Tax multiplier}
+Tax multiplier
+\begin{equation*}
+\frac{dY}{dT} = -\frac{MPC}{1 - MPC}
+\end{equation*}
+
+
+
+
+Effect of change in government spending is greater than change in tax rate, since
+the absolute value of spending multiplier is greater than the abs of tax multiplier.
+
+According to an analysis by Obama administration economists, the government-purchases multiplier is 1.57, whereas the tax multiplier is only 0.99.
+
+
+
+
+
+\section{The goods market and the IS curve}
+The Keynesian cross is useful because it shows how the spending plans of households, firms, and the government determine the economy’s income. {\textbf {Yet it makes the simplifying assumption that planned investment I is fixed.}}
+
+
+In fact, the interest rate and investment are negatively related. Therefore, we write
+the planned investment as
+\begin{equation*}
+I = I(r)
+\end{equation*}
+
+
+{\textbf {Derive the IS curve from graph.}}
+
+\begin{figure}[H]
+\center{\includegraphics[scale =.5 ]  {figures/derive_IS.png}}
+\end{figure}
+
+A rise in interest rate leads to a fall in investment. Planned expenditure falls.
+Then, national income falls.
+
+{\textbf {The IS curve summarizes the relationship between the interest rate and 
+national income.}}
+Each point on the IS curve represents equilibrium in the {\textbf {goods market}}.
+
+
+\subsection{Fiscal policy and shifts in the IS}
+
+
+\begin{figure}[H]
+\center{\includegraphics[scale =.6 ]  {figures/fp_and_IS.png}}
+\end{figure}
+
+
+
+
+\section{Building block of the LM curve: The Theory of Liquidity Preference}
+Define:
+\begin{itemize}
+\item M, money supply, an exogenous variable, since it is controlled by the central bank.
+\item P, price level, an exogenous variable, since we assume {\textbf {P is fixed in the short run}}.
+\item $ \frac{M}{P} $, real money balances
+\end{itemize}
+
+
+These imply that the supply of real money balances is fixed and does not depend on
+interest rate!
+
+\begin{figure}[H]
+\center{\includegraphics[scale =.6 ]  {figures/money_s_and_d.png}}
+\end{figure}
+
+
+
+
+\subsection{Demand for real money balances}
+The theory of liquidity preference posits that the interest rate is one determinant of
+how much money people choose to hold (demand for money).
+Income is {\textbf {another}} determinant of the demand for money.
+When income is high, expenditure is high, and people engage in more transactions that
+require the use of money.
+
+\begin{equation*}
+\left( \frac{M}{P} \right) ^{d} = L(r, Y)
+\end{equation*}
+
+
+\begin{itemize}
+\item Interest rate is the opportunity cost of holding money. People earn nothing from
+		holding money except for the services provided by money (you can purchase goods using
+		money).
+\item If $ r $ rises, people hold less money, since they choose to buy more interest-
+		bearing assets using their money.
+\item If $ r $ falls, people hold more money, since they  interest-bearing assets are
+		less attractive.
+\end{itemize}
+
+
+
+
+\subsection{Supply for real money balances}
+The supply of real money balances is controlled by the CB.
+
+The supply and demand for real money balances determine what interest rate prevails
+in the economy.
+
+
+\begin{figure}[H]
+\center{\includegraphics[scale =.6 ]  {figures/money_supply_shift_left.png}}
+\end{figure}
+
+Since P is fixed in the short run, when the Fed reduces the money supply M, the supply
+of real money balances falls, supply shifts to the left. 
+\begin{itemize}
+\item It leads to a rise in the equilibrium interest rate.
+\item People hold less money and purchase more interest-bearing assets because of the
+		higher interest rate.
+\end{itemize}
+
+
+
+\section{Money market and the LM curve}
+The money demand
+\begin{equation*}
+\left( \frac{M}{P} \right) ^{d} = L(r, Y)
+\end{equation*}
+
+is {\textbf {negatively related to the interest rate}} and positively related to income.
+
+
+
+
+\begin{figure}[H]
+\center{\includegraphics[scale =.6 ]  {figures/money_demand_shifts_right.png}}
+\end{figure}
+
+
+
+\subsection{Monetary policy and the shift of LM}
+Change in income causes a movement along the LM curve.
+
+However, the change in money supply will {\textbf {shift the LM curve}}.
+
+\begin{figure}[H]
+\center{\includegraphics[scale =.6 ]  {figures/money_supply_shift_left_LM.png}}
+\end{figure}
+
+
+\begin{itemize}
+\item Decreases in the supply of real money balances shift the LM curve upward.
+\item Increases in the supply of real money balances shift the LM curve downward.
+\end{itemize}
+
+
+
+
+
+\section{Equilibrium of IS and LM}
+We have the IS curve,
+\begin{equation*}
+Y = C(Y - T) + I(r) + G,
+\end{equation*}
+and the LM curve
+\begin{equation*}
+\frac{M}{P} = L(r, Y)
+\end{equation*}
+
+They all posit the relationship between interest rate and national income. The 
+intersection of IS and LM determines the equilibrium interest rate and national income. 
+
+In another word, the intersection of IS and LM satisfy conditions for equilibrium in
+both goods market and money market.
+
+\begin{figure}[H]
+\center{\includegraphics[scale =.6 ]  {figures/IS-LM_equilibrium.png}}
+\end{figure}
+
+
+
+In summary,
+
+\begin{figure}[H]
+\center{\includegraphics[scale =.5 ]  {figures/blueprint.png}}
+\end{figure}
+
+
+
+
+
+\section{Applying the equilibrium}
+Analyze two issues:
+\begin{itemize}
+\item What are the potential causes of fluctuations in national income Y?
+\item How the IS-LM fits into the AD-AS model? (we related the fixed price assumption here)
+\end{itemize}
+
+
+\subsection{Potential causes of fluctuations in national income}
+
+\subsubsection{How fiscal policy affects the short-run equilibrium}
+{\textbf {Government purchases:}}
+
+\begin{figure}[H]
+\center{\includegraphics[scale =.6 ]  {figures/fp_equilibrium.png}}
+\end{figure}
+
+
+
+A rise in G leads to a right shift in the IS curve. In the Keynesian Cross model,
+the change in national income Y is {\textbf {greater}} than the change in G because of 
+the spending multiplier.
+
+
+However, in the IS-LM model, the change national income is less than the change in G.
+
+A rise in G leads to an increase in Y. In the money mkt, the rise in Y pushes up the
+demand for real money balances while the supply is constant. It causes a rise in the
+interest rate.
+
+High interest rate reduces quantity demanded for investment from private sector (the Crowding out effect).
+
+
+{\textbf {This fall in investment partially offsets the expansion of Y caused by the
+rise in G.}}
+
+
+
+\\
+{\textbf {Tax rate:}}
+Same.
+
+
+\subsubsection{How monetary policy affects the short-run equilibrium}
+
+
+
+
+
+
+
+
+
+
+
+
+\bibliographystyle{plainnat}
+\bibliography{my_bib}
+
+\end{document}
+
