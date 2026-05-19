@@ -1,0 +1,108 @@
+
+%\documentclass[./main.tex(path of main file)]{subfiles}
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmin}{arg\,min} % thin space, limits underneath in displays
+\DeclareMathOperator*{\argmax}{arg\,max} % thin space, limits underneath in displays
+\newtheorem{thm}{Theorem}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage{indentfirst}
+\setlength{\parindent}{0em}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\doublespacing
+\usepackage[flushleft]{threeparttable}
+\usepackage{booktabs,caption}
+\usepackage{float}
+\usepackage[sort,comma]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{subfiles}
+\usepackage{blindtext}
+\usepackage{glossaries}
+\usepackage{pdflscape}
+\usepackage{adjustbox}
+\usepackage{rotating}
+\usepackage{eurosym,geometry,ulem,subcaption,caption,color,sectsty,comment,footmisc,pdflscape,array}
+
+% Format definition list
+\newenvironment{mylist}[1]%
+  {\begin{list}{}{\settowidth{\labelwidth}{\textbf{#1}}
+   \setlength{\leftmargin}{\labelwidth}
+   \addtolength{\leftmargin}{\labelsep}
+   \renewcommand{\makelabel}[1]{\textbf{\hfill##1}}}}%
+  {\end{list}}
+
+
+
+\newcommand{\incfig}[1]{%
+\def\svgwidth{\columnwidth}
+\import{./figures/}{#1.pdf_tex}
+}
+
+
+
+
+\title{}
+\author{}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+
+\section{New Keynesian and Real Business Cycle model}
+
+\subsection{What's being adopted by the NK from the RBC}
+\begin{itemize}
+\item 
+The RBC model relies on dynamic, stochastic, general equilibrium framework.
+The NK model has fully adopted these features.
+\item 
+The RBC approach takes the form of a set of equations that describe, in  a
+highly aggregative manner: 1) the behavior of HHs, firms, and policymakers,
+2) some market clearing and/or resource constraints, and 3) the evolution of
+one or more exogenous variables that are the ultimate source of fluctuations 
+in the economy.
+{\textbf {More controversial}} may be the assumption, widely found in both 
+RBC and NK models, that the behavior of HHs and firms is the outcome of an
+optimization problem, solved under the assumption of rational expectations.
+\end{itemize}
+
+
+\subsection{What's being added, in the NK model, on top of RBC}
+\begin{itemize}
+\item 
+		It introduces nominal variables explicitly: prices, wages, nominal 
+		interest rates.
+\item 
+		It departs from the assumption of perfect competition in the goods
+		market, allowing for positive price markups.
+\item 
+		It introduces nominal rigidities, generally using the formalism
+		proposed by Calvo (1983), whereby only a constant fraction of 
+		firms, drawn randomly from the population, are allowed to adjust
+		the price of their good.
+    The assumption of imperfect competition is often extended to the 
+		labor market as well, with the introduction of wage rigidities (
+		nominal or real).
+\end{itemize}
+
+
+
+\bibliographystyle{plainnat}
+\bibliography{my_bib}
+
+\end{document}
+
