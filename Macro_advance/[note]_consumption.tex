@@ -1,0 +1,185 @@
+
+%\documentclass[./main.tex(path of main file)]{subfiles}
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmin}{arg\,min} % thin space, limits underneath in displays
+\DeclareMathOperator*{\argmax}{arg\,max} % thin space, limits underneath in displays
+\newtheorem{thm}{Theorem}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage{indentfirst}
+\setlength{\parindent}{0em}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\doublespacing
+\usepackage[flushleft]{threeparttable}
+\usepackage{booktabs,caption}
+\usepackage{float}
+\usepackage[sort,comma]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{subfiles}
+\usepackage{blindtext}
+\usepackage{glossaries}
+\usepackage{pdflscape}
+\usepackage{adjustbox}
+\usepackage{rotating}
+\usepackage{eurosym,geometry,ulem,subcaption,caption,color,sectsty,comment,footmisc,pdflscape,array}
+
+% Format definition list
+\newenvironment{mylist}[1]%
+  {\begin{list}{}{\settowidth{\labelwidth}{\textbf{#1}}
+   \setlength{\leftmargin}{\labelwidth}
+   \addtolength{\leftmargin}{\labelsep}
+   \renewcommand{\makelabel}[1]{\textbf{\hfill##1}}}}%
+  {\end{list}}
+
+
+
+\newcommand{\incfig}[1]{%
+\def\svgwidth{\columnwidth}
+\import{./figures/}{#1.pdf_tex}
+}
+
+
+
+
+\title{}
+\author{}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+\section{Key concepts}
+\subsection{Wealth vs. Income}
+Income is a receipt of money by an individual during some period of time, such as labor income, 
+interest income.
+An individual's wealth is the level of assets (cash, checking accounts, savings accounts, stock, 
+bonds, etc.) that an individual has in store. It can be negative if an individual is overdrawn
+on his checking account or otherwise is in debt.
+
+{\textbf {Example:}}:\\
+If you have \$1000 in your savings accounts, then you have \$1000 in wealth.
+If it generates \$30 interest in period 2, then your interest income is \$30.
+If you earn a labor income of \$10000 in period 2, your total income is \$10030.
+
+\subsection{First-Order Condition}
+A first-order condition with respect to any particular variable mathematically describes how
+a maximum is achieved by optimally setting/choosing that particular variable, taking as given the
+setting/choices for all other variables.
+
+
+
+\section{Dynamic Consumption-Savings Framework}
+In this section, we will focus on the study of intertemporal (literally, ``across time")
+choices of individuals.
+We first ignore  leisure and labor altogether.
+
+Consider a two-period model.
+
+\subsection{Assumptions}
+\begin{itemize}
+\item 
+		Each individual plans economic events for two time periods: present (period 1) and future 
+		(period 2). There is no period 3! And every individual knows it!
+		We will relax this assumption later.
+\item 
+		Individual has no control over his or her income. Each individual will receive labor income
+		in each of the two periods. 
+\item 
+		Individual has to make a choice about consumption in each of the two periods.
+\item
+		Saving or borrowings (dissaving) are allowed during period 1.
+\end{itemize}
+
+
+
+\subsection{Model}
+\subsubsection{Period-by-Period Budget Constraint}
+
+\begin{align}
+\text{ Period 1: }P_1c_1 + A_1 &= (1 + i)A_0 + Y_1 \label{eqn:t1_bc}\\
+\text{ Period 2: }P_2c_2 + A_2 &= (1 + i)A_1 + Y_2 \label{eqn:t2_bc}
+\end{align}
+We must have $ A_2 = 0 $ as there is no period 3.
+
+
+
+$ Y_1 $ is labor income received at the beginning of period 1. Each individual begins period 1
+with some initial wealth (which may be negative), $ A_0 $. 
+Each individual chooses consumption $ c_1 $ in period 1, each unit of which costs $ P_1 $ dollars.
+He also decides how much wealth to carry into period 2, $ A_1 $. A negative $ A_1 $ means that 
+the individual is in debt at the beginning of period 2. Nominal interest rate denotes as $ i $.
+
+Private saving in a given time period is being defined as the difference between an individual's
+total income and his total expenditures, consumption and taxes (we ignore taxes for now).
+From the above, the total income is the sum of labor income and interest income,
+\begin{equation*}
+TotalIncome_1 = Y_1 + iA_0.
+\end{equation*}
+Thus saving in period 1 is
+\begin{equation*}
+S^{priv} = iA_0 + Y_1 - P_1c_1
+\end{equation*}
+If we rearrange equation \eqref{eqn:t1_bc},
+\begin{equation*}
+A_1 - A_0 = iA_0 + Y_1 - P_1c_1,
+\end{equation*}
+it says saving is the change in wealth during the course of a time period.
+
+\subsubsection{Lifetime Budget Constraint}
+
+$ A_1 $ appears in both equation \eqref{eqn:t1_bc} and \eqref{eqn:t2_bc}. Rearrange equation 
+\eqref{eqn:t1_bc} by writting $ A_1 $ as a function of all other terms, then put it into 
+equation \eqref{eqn:t2_bc}, we get.
+\begin{equation}
+P_1c_1 + \frac{P_2c_2}{1 + i} = Y_1 + \frac{Y_2}{(1 + i)} + (1 + i)A_0,
+\end{equation}
+which is the lifetime budget constraint (LBC).
+If we write $ c_2 $ as a function of $ c_1 $, we get
+\begin{equation}
+c_2 =  - \frac{P_1(1 + i)}{P_2}c_1 + \frac{1 + i}{P_2}Y_2 + \frac{Y_2}{P_2}
+\end{equation}
+
+
+
+
+
+
+
+\subsection{Results}
+{\textbf {Real Interest Rate and Savings:}}
+\begin{itemize}
+\item 
+		If an individual is initially a debtor (consumption is greater than income) at the end of period 
+		1, then a rise in the real interest rate necessarily increases his savings during period 1.
+\item 
+		If an individual is initially a saver at the end of period 1, then a rise in the real interest
+		rate may increase or decrease his savings during period 1.
+\end{itemize}
+{\textbf {Yet theory cannot guide use as to how private savings at the macroeconomic level
+responds to a rise in the real interest rate!}}
+Many empirical studies conclude that the real interest rate in fact has a {\underline {very weak 
+effect}}, if any effect at all, on private savings behavior.
+
+The studies that do show that real interest rates do influence savings almost always conclude that
+a rise in the real interest rate leads to a rise in savings.
+
+
+
+\bibliographystyle{plainnat}
+\bibliography{my_bib}
+
+\end{document}
+
