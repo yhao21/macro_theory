@@ -1,0 +1,131 @@
+
+%\documentclass[./main.tex(path of main file)]{subfiles}
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmin}{arg\,min} % thin space, limits underneath in displays
+\DeclareMathOperator*{\argmax}{arg\,max} % thin space, limits underneath in displays
+\newtheorem{thm}{Theorem}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage{indentfirst}
+\setlength{\parindent}{0em}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\doublespacing
+\usepackage[flushleft]{threeparttable}
+\usepackage{booktabs,caption}
+\usepackage{float}
+\usepackage[sort,comma]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{subfiles}
+\usepackage{blindtext}
+\usepackage{glossaries}
+\usepackage{pdflscape}
+\usepackage{adjustbox}
+\usepackage{rotating}
+\usepackage{eurosym,geometry,ulem,subcaption,caption,color,sectsty,comment,footmisc,pdflscape,array}
+
+% Format definition list
+\newenvironment{mylist}[1]%
+  {\begin{list}{}{\settowidth{\labelwidth}{\textbf{#1}}
+   \setlength{\leftmargin}{\labelwidth}
+   \addtolength{\leftmargin}{\labelsep}
+   \renewcommand{\makelabel}[1]{\textbf{\hfill##1}}}}%
+  {\end{list}}
+
+
+
+\newcommand{\incfig}[1]{%
+\def\svgwidth{\columnwidth}
+\import{./figures/}{#1.pdf_tex}
+}
+
+
+
+
+\title{}
+\author{}
+\date{}
+
+
+\begin{document}
+%\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+{\textbf {Types of price rigidity}}:\\
+
+Many prices are reviewed on a predetermined schedule and are only rarely changed at other times.
+Thus price changes are not purely {\underline {state-dependent}} (that is, triggered by developments 
+within the economy, regardless of the time over which the developments have occurred); they are partly
+{\underline {time-dependent}} (that is, triggered by the passage of time).
+\\
+
+
+Section \ref{sec:DNK} presents a common framework for all the models of this part of the chapter.
+Section \ref{sec:Fischer} through \ref{sec:Calvo} then consider three baseline models of 
+{\underline {time-dependent}} price adjustment:
+the Fischer, or Fischer-Phelps-Taylor model (Fischer, 1977; Phelps and Taylor, 1977); the Taylor
+model (Taylor, 1979); and the Calvo model (Calvo, 1983). All three models posit that prices
+(or wages) are set by multiperiod contracts or commitments. The central result of the models is that
+multiperiod contracts lead to gradual adjustment of the price level to nominal disturbances. As a
+result, {\underline {aggregate demand disturbances have persistent real effects.}}
+
+The Taylor and Calvo models differ from the Fischer model in one important respect. The Fischer model
+assumes that {\underline {prices are predetermined but not fixed}}. That is, when a multiperiod
+contract sets prices for several periods, it can specify a different for each period. In the 
+Taylor and Calvo models, in contrast, prices are fixed: a contract must specify the same price each
+period it is in effect.
+
+The difference between the Taylor and Calvo models is smaller. In the Taylor model, opportunities to
+change prices arrive deterministically, and each price is in effect for the same number of periods.
+In the Calvo model, opportunities to change prices arrive randomly, and so the number of periods
+a price is in effect is stochastic.
+
+Section \ref{sec:state-dependent} then turns to two baseline models of {\underline {state-dependent}}
+price adjustment, the Caplin-Spulber and Danziger-Golosov-Lucas models (Caplin and Spulber, 1987;
+Danziger, 1999; Golosov and Lucas, 2007) In both, the only barrier to price adjustment is a constant
+fixed cost. There are two differences between the models. First, money growth is always positive in the Caplin-Spulber model, while the version of the Danziger-GolosovLucas model we will consider assumes no trend money growth. Second, the Caplin-Spulber model assumes no firm-specific shocks, while the DanzigerGolosov-Lucas model includes them. Both models deliver strong results about the effects of monetary disturbances, but for very different reasons.
+
+Section \ref{sec:dynamic_price_adjustment} considers two more models of dynamic price adjustment:
+the Calvo-with-indexation modoel and the Mankiw-Reis model (Mankiw and Reis, 2002;
+Christiano, Eichenbaum, and Evans, 2005). These models are more complicated than the models of 
+earlier sections, but appear to have more hope of fitting key facts about inflation dynamics.
+
+
+\section{Building Blocks of Dynamic New Keynesian Models} \label{sec:DNK}
+\section{The Fischer (or Fischer-Phelps-Taylor) Model} \label{sec:Fischer}
+\section{The Taylor Model} \label{sec:Taylor}
+\section{The Calvo Model} \label{sec:Calvo}
+\section{State-Dependent Pricing} \label{sec:state-dependent}
+\section{Dynamic Price Adjustment} \label{sec:dynamic_price_adjustment}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\bibliographystyle{plainnat}
+\bibliography{my_bib}
+
+\end{document}
+

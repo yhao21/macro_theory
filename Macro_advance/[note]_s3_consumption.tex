@@ -1,0 +1,204 @@
+
+%\documentclass[./main.tex(path of main file)]{subfiles}
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmin}{arg\,min} % thin space, limits underneath in displays
+\DeclareMathOperator*{\argmax}{arg\,max} % thin space, limits underneath in displays
+\newtheorem{thm}{Theorem}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage{indentfirst}
+\setlength{\parindent}{0em}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\doublespacing
+\usepackage[flushleft]{threeparttable}
+\usepackage{booktabs,caption}
+\usepackage{float}
+\usepackage[sort,comma]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{subfiles}
+\usepackage{blindtext}
+\usepackage{glossaries}
+\usepackage{pdflscape}
+\usepackage{adjustbox}
+\usepackage{rotating}
+\usepackage{eurosym,geometry,ulem,subcaption,caption,color,sectsty,comment,footmisc,pdflscape,array}
+
+% Format definition list
+\newenvironment{mylist}[1]%
+  {\begin{list}{}{\settowidth{\labelwidth}{\textbf{#1}}
+   \setlength{\leftmargin}{\labelwidth}
+   \addtolength{\leftmargin}{\labelsep}
+   \renewcommand{\makelabel}[1]{\textbf{\hfill##1}}}}%
+  {\end{list}}
+
+
+
+\newcommand{\incfig}[1]{%
+\def\svgwidth{\columnwidth}
+\import{./figures/}{#1.pdf_tex}
+}
+
+
+
+
+\title{}
+\author{}
+\date{}
+
+
+\begin{document}
+%\maketitle
+
+\tableofcontents
+\newpage
+
+
+\section{The Permanent-Income Hypothesis (Consumption under Certainty)}
+
+
+\subsection{Permanent Income}
+
+Consider a simple utility function.
+The Lagrangian for the maximization problem is
+\begin{equation}
+L = \sum\limits_{i = 1} ^T u(C_{t}) + \lambda
+\left( 
+		A_0 + \sum\limits_{t = 1} ^T Y_{t} - \sum\limits_{t = 1} ^T C_{t}		
+\right) .
+\end{equation}
+The FOC for $ C_{t} $ is 
+\begin{equation*}
+u'(C_{t}) = \lambda
+\end{equation*}
+
+Since the above FOC holds every period, the marginal utility of consumption is constant.
+And since the level of consumption uniquely determines its marginal utility, this meant that
+consumption must be constant, i.e., $ C_1 = C_2 = ... = C_{T} $.
+Substituting this fact into the BC yields,
+\begin{equation}
+C_{t} = \frac{1}{T}
+\left( 
+		A_0 + \sum\limits_{t = 1} ^T Y_{t}	
+\right) , \text{ for all } t. \label{eqn:permanent_income_C}
+\end{equation}
+
+The term in the parentheses is the individual's total lifetime resources. 
+Thus equation \eqref{eqn:permanent_income_C} states that 
+{\textbf {the individual divides his or her lifetime resources equally among each period of life}}.
+This analysis implies that the individual's consumption in a given period is determined
+{\underline {NOT}} by income that period, but by income over his or her entire life.
+In the terminology of Friedman (1957), the RHS of equation \eqref{eqn:permanent_income_C} is
+{\underline {permanent income}} (it is an averaged income), and the difference between current
+and permanent income is {\underline {transitory income}}.
+{\textbf {
+Equation \eqref{eqn:permanent_income_C} implies that consumption is determined by permanent income.
+}}
+
+The permanent-income hypothesis assumes that individuals can borrow at the same interest rate at
+which they can save as long as they eventually repay their loans.
+
+
+
+\subsection{Savings}
+\begin{align}
+S_{t} &= Y_{t} - C_{t}\\
+&= 
+\left( 
+		Y_{t} - \frac{1}{T} \sum\limits_{\tau = 1} ^T Y_{\tau}	
+\right)  
+- \frac{1}{T} A_0 \label{eqn:permanent_income_S}
+\end{align}
+
+Savings is high when current income ($ Y_{t} $) is high relative to its average 
+($ \frac{1}{T} \sum\limits Y_{\tau}	 $)--that is, when transitory income is high.
+Thus {\underline {the individual uses saving and borrowing to smooth the path of consumption.}}
+This is the key idea of the permanent-income hypothesis of Modigliani and Brumberg (1954) and
+Friedman (1957).
+
+At a more general level, saving is future consumption.
+
+
+
+
+\subsection{Conclusion}
+The permanent-income hypothesis provides appealing explanations of many important features of 
+consumption. For example, it explains why temporary tax cuts appear to have much smaller
+effects than permanent ones, and it accounts for many features of the relationship between current
+income and consumption.
+
+Yet there are also important features of consumption that appear inconsistent with the 
+permanent-income hypothesis. For example, both macroeconomic and microeconomic evidence suggest
+that consumption often responds to predictable changes in income. And simple models of consumer
+optimization cannot account for the equity premium.
+
+Indeed, the permanent-income hypothesis fails to explain some central features of consumption
+behavior. One of the hypothesis's key predictions is that there should be no relation between the
+expected growth of an individual's income over his or her lifetime and the expected growth of
+his or her consumption: consumption growth is determined by the real interest rate and the discount
+rate, not by the time pattern of income.
+
+Carroll and Summers (1991) present extensive evidence that this prediction is incorrect. For example,
+individuals in countries where income growth is high typically have high rates of consumption
+growth over their lifetime, and individuals in slowly growing countries typically have low rates
+of consumption growth.
+
+More generally, most households have little wealth, and their consumption approximately tracks
+their income. As a result, their current income has a large role in determining their consumption.
+
+
+
+
+\section{The Random Walk Hypothesis (Consumption under Uncertainty)}
+
+
+
+
+
+\section{Precautionary Saving}
+The combination of a positive third derivative of the utility function ($ U'(C) $ is convex to the
+origin) and uncertainty about future income reduces current consumption, and thus raises saving.
+This saving is known as {\underline {precautionary saving}} (Leland, 1968).
+
+
+
+
+\section{Liquidity Constraints}
+
+The permanent-income hypothesis assumes that individuals can borrow at the same interest rate at
+which they can save as long as they eventually repay their loans.
+Yet the interest rates that households pay on credit card debt, automobile loans, and other
+borrowing are often much higher than the rates they obtain on their savings. In addition, some 
+individuals are unable to borrow more at any interest rate.
+
+{\textbf {Liquidity constraints can raise saving in two ways}}. First, and most obviously, whenever a
+liquidity constraint is binding, it causes the individual to consume less than he or she otherwise
+would. Second, even if the constraints are not currently binding, the fact that they may bind in the
+future reduces current consumption. Suppose, for example, there is some chance of low income
+in the next period. If there are no liquidity constraints and income turns out to be low, the 
+individual can borrow to avoid a sharp fall in consumption. If there are liquidity constraints, 
+however, a large fall in income causes a large fall in consumption unless the individual
+has savings. Thus liquidity constraints cause individuals to save as insurance against the
+effects of future falls in income.
+
+
+
+
+
+
+\bibliographystyle{plainnat}
+\bibliography{my_bib}
+
+\end{document}
+
